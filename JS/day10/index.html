@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners Example</title>
+    <style>
+        #toggleImage {
+            display: block;
+            margin-top: 20px;
+        }
+
+        #mouseoverElement {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Task 1: Button and Paragraph -->
+    <button id="changeTextButton">Click me</button>
+    <p id="textParagraph">This is the original text.</p>
+
+    <!-- Task 2: Image -->
+    <img id="toggleImage"
+        src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Sample Image" width="200">
+    <div id="mouseoverElement">Hover over me!</div>
+    <!-- Task 4: Input Field with Keydown Event -->
+    <input type="text" id="logKeyInput" placeholder="Type something...">
+    <!-- Task 5: Input Field with Keyup Event and Paragraph -->
+    <input type="text" id="displayValueInput" placeholder="Type here...">
+    <p id="displayParagraph"></p>
+    <!-- Activity 4: Form Events -->
+    <!-- Task 6: Form with Submit Event -->
+    <form id="dataForm">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="email" name="email" placeholder="Enter your email">
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Task 7: Select Dropdown with Change Event -->
+    <select id="dropdown">
+        <option value="">Select an option</option>
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+    </select>
+    <p id="selectedValueParagraph"></p>
+
+    <!-- Activity 5: Event Delegation -->
+    <!-- Task 8: List with Event Delegation -->
+    <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Task 9: Parent element for dynamically added children -->
+    <div id="parentElement">
+        <button id="addChildButton">Add Child</button>
+    </div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
